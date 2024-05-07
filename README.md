@@ -94,7 +94,7 @@ Paste this into the devcontainer.json
   "service": "dev",
   "dockerComposeFile": "docker-compose.yml",
   "forwardPorts": [8080],
-  "workspaceFolder": "/workspace"
+  "workspaceFolder": "/testing_with_cypress"
 }
 
 ---
