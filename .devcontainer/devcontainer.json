@@ -1,0 +1,10 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+   "features": {
+        "desktop-lite": {
+            "password": "vscode", // Set your desired password
+            "webPort": "6080", // Port for web access
+            "vncPort": "5901" // Port for VNC access
+        }
+    }
+}
