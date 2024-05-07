@@ -5,19 +5,14 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
 	"features": {
-		"ghcr.io/schlich/devcontainer-features/cypress:1": {},
-
-        "desktop-lite": {
-            "password": "vscode", // Set your desired password
-            "webPort": "6080", // Port for web access
-            "vncPort": "5901" // Port for VNC access
-        }
-
+		"ghcr.io/devcontainers/features/desktop-lite:1": {},
+		"ghcr.io/schlich/devcontainer-features/cypress:1": {}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
- 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
