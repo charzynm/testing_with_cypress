@@ -6,7 +6,8 @@
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
 	"features": {
 		"ghcr.io/devcontainers/features/desktop-lite:1": {},
-		"ghcr.io/schlich/devcontainer-features/cypress:1": {}
+		"ghcr.io/schlich/devcontainer-features/cypress:1": {},
+		"ghcr.io/kreemer/features/chrometesting:1": {}
 	},
 
 	"forwardPorts": [6080],
