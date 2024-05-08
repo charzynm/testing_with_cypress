@@ -29,7 +29,7 @@
 	// Configure tool-specific properties.
 	// "customizations": {},
 
-	"remoteUser": "charzynm@wp.pl"
+	"remoteUser": "charzynm"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
