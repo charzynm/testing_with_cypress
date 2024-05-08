@@ -14,7 +14,7 @@
       		"label": "desktop"
     	}
 
-	}
+	},
 
 	//password - vscode
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -28,6 +28,8 @@
 
 	// Configure tool-specific properties.
 	// "customizations": {},
+
+	"remoteUser": "charzynm@wp.pl"
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
