@@ -3,11 +3,9 @@
 {
 	"name": "Node.js",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+	"image": "cypress/included:cypress-13.8.1-node-22.0.0-chrome-124.0.6367.60-1-ff-125.0.2-edge-124.0.2478.51-1",
 	"features": {
-		"ghcr.io/devcontainers/features/desktop-lite:1": {},
-		"ghcr.io/schlich/devcontainer-features/cypress:1": {},
-		"ghcr.io/kreemer/features/chrometesting:1": {}
+		"ghcr.io/devcontainers/features/desktop-lite:1": {}
 	},
 
 	"forwardPorts": [6080],
@@ -16,9 +14,8 @@
       		"label": "desktop"
     	}
 
-	},
+	}
 
-	"postCreateCommand": "npm install && cypress install"
 	//password - vscode
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
