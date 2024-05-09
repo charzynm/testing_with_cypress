@@ -1,6 +1,12 @@
 describe('Amazon template spec', () => {
   beforeEach(() => {
     cy.visit('https://amazon.pl')
+
+    cy.get('#sp-cc-rejectall-link').then(($el) => {
+      if ($el.length) {
+        $el.click()
+      }
+    })
   })
 
   it('Search product', () => {
@@ -10,9 +16,9 @@ describe('Amazon template spec', () => {
 
     cy.get('#nav-search-submit-button').click({force:true})
 
-    cy.get('[data-component-type="s-search-results"]').as("products")
+    cy.get('[data-component-type="s-search-results"]').as('products')
 
-    cy.get("@products").eq(0).invoke('text').then(productText => {
+    cy.get('@products').eq(0).invoke('text').then(productText => {
       cy.log(productText)
     })
   })
