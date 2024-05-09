@@ -16,10 +16,6 @@ describe('Amazon template spec', () => {
 
     cy.get('#nav-search-submit-button').click({force:true})
 
-    cy.get('[data-component-type="s-search-results"]').as('products')
-
-    cy.get('@products').eq(0).invoke('text').then(productText => {
-      cy.log(productText)
-    })
+    cy.get('[data-component-type="s-search-results"] a.a-link-normal.s-no-outline').first().click()
   })
 })
